@@ -1,0 +1,55 @@
+#1.Write a function to calculate area and perimeter of a rectangle.
+def rec(a,b):
+
+    area =a*b
+
+    perimeter=2*(a+b)
+
+    return area,perimeter
+
+z = rec(3,4)
+
+print (z)
+..............................................................................................................................................
+#2.Write a function to calculate area and circumference of a circle.
+def circle(a):
+    area=3.14*(a*a)
+    circu=2*3.14*a
+    return area,circu
+z=circle(2)
+print(z)
+..............................................................................................................................................
+#3.Write a function to calculate power of a number raised to other. E.g.- ab.
+def pow(a,b):
+    x=1
+    for i in range(0,b):
+      x=a*x
+    return x
+z=pow(3,4)
+print(z)
+................................................................................................................................................
+#4.	Write a function to tell user if he/she is able to vote or not.
+( Consider minimum age of voting to be 18. )
+def age(a):
+    if a>=18:
+      x="eligible"
+    else:
+      x="not eligible"
+
+    return(x)
+z=age(25)
+print(z)
+.................................................................................................................................................
+#5.Create a module which will have a function for finding a factorial, 
+create another module which will take an input and returns the factorial of the input calling the first module.
+def factorial(n):
+  fact=1
+  for i in range(1,n+1):
+     fact=fact*i
+  return fact
+z=factorial(4)
+print(z)
+........
+from module1 import factorial
+z=factorial(8)
+print(z)
